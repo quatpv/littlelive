@@ -38,7 +38,7 @@ Input Sources:
 ## Installation
 ```bash
 # Clone the repository
-git clone <repository-url>
+git clone https://github.com/quatpv/littlelive.git
 cd litlelive
 
 # Install dependencies
