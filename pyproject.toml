@@ -1,0 +1,14 @@
+[tool.pytest.ini_options]
+addopts = "-ra -q --disable-warnings --cov=src --cov-report=xml"
+testpaths = ["tests"]
+
+[tool.coverage.run]
+source = ["src"]
+relative_files = true
+
+[tool.coverage.report]
+show_missing = true
+fail_under = 80.00
+
+[tool.coverage.xml]
+output = "coverage.xml"

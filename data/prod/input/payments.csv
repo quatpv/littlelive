@@ -1,0 +1,9 @@
+id,document_id,document_type,amount_paid,payment_date
+pay_001,inv_001,invoice,150.00,2025-05-10
+pay_002,cr_003,credit_note,100.00,2025-02-01
+pay_003,inv_002,invoice,200.00,2025-06-10
+pay_004,inv_004,invoice,100.00,2025-01-10
+pay_005,cr_006,credit_note,40.00,2025-03-05
+pay_006,inv_006,invoice,250.00,2025-05-01
+pay_007,cr_008,credit_note,90.00,2025-05-10
+pay_008,inv_005,invoice,50.00,2025-03-01

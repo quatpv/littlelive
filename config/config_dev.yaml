@@ -1,0 +1,26 @@
+spark:
+  app_name: "AgeingReportPipeline"
+  config:
+    spark.sql.adaptive.enabled: "true"
+    spark.sql.adaptive.coalescePartitions.enabled: "true"
+    spark.sql.execution.arrow.pyspark.enabled: "true"
+
+pipeline:
+  inputs:
+    invoices:
+      format: csv
+      path: data/dev/input/invoices.csv
+    credit_notes:
+      format: csv
+      path: data/dev/input/credit_notes.csv
+    payments:
+      format: csv
+      path: data/dev/input/payments.csv
+  
+  outputs:
+    format: csv
+    path: data/dev/output/ageing_report
+
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
